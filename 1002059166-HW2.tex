@@ -1,0 +1,98 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+]{article}
+\usepackage{amsmath,amssymb}
+\usepackage{lmodern}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\usepackage{graphicx}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+\ifLuaTeX
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same} % disable monospaced font for URLs
+\hypersetup{
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+
+\author{}
+\date{}
+
+\begin{document}
+
+\hypertarget{bioinformatics-assignment-3}{%
+\section{\texorpdfstring{ BIOINFORMATICS
+ASSIGNMENT-3}{ BIOINFORMATICS ASSIGNMENT-3}}\label{bioinformatics-assignment-3}}
+
+1)Suppose that transition mutations (A ←→ G and T ←→ C) are less common
+than transversions (A ←→ T , A ←→ C, G ←→ T , and G ←→ C). A
+substitution matrix that reflects this is
+
+\includegraphics[width=5.01042in,height=1.65953in]{vertopal_4ab34b1416894040aada668b6d03f69f/media/image1.png}
+
+2)Implemented the Needleman-Wunsch algorithm and returned the list of
+tuples.
+
+3)Implemented the Smith-Waterman algorithm and returned the list of
+tuples.
+
+4)Written code to create a custom substitution dict S like used as input
+for local\_alignment and the output tuples are
+
+\includegraphics[width=5.02083in,height=0.76042in]{vertopal_4ab34b1416894040aada668b6d03f69f/media/image2.png}
+
+\textbf{Difficulty Assignment}
+
+1)It took me 25 hours to complete the assignment
+
+2) The question is not clear for me and it took me too much time to
+understand how to print the matrix. For example there is only 1
+possibility given there but there are 2 possibilities for those
+sequences so i got confused too much.
+
+\end{document}
